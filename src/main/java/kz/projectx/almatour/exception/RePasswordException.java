@@ -7,5 +7,4 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ResponseStatus(code = HttpStatus.BAD_REQUEST, reason = "Passwords do not match")
 @NoArgsConstructor
 public class RePasswordException extends RuntimeException{
-
 }
