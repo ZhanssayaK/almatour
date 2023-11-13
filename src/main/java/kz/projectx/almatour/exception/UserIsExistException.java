@@ -6,5 +6,5 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(code = HttpStatus.CONFLICT, reason = "User is already exist")
 @NoArgsConstructor
-public class UserIsExistException extends RuntimeException{
+public class UserIsExistException extends RuntimeException {
 }
