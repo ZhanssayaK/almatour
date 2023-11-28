@@ -17,7 +17,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class RegistrantionService {
+public class RegistrationService {
 
     private final UserRepository userRepository;
     private final RoleRepository roleRepository;

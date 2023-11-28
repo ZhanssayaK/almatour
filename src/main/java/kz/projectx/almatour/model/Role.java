@@ -8,6 +8,7 @@ import org.springframework.security.core.GrantedAuthority;
 @Entity
 @Getter
 @Setter
+@Table(name = "tb_roles")
 public class Role implements GrantedAuthority {
 
     @Id

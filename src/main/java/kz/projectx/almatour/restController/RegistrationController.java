@@ -2,7 +2,7 @@ package kz.projectx.almatour.restController;
 
 import jakarta.validation.Valid;
 import kz.projectx.almatour.dto.UserDTO;
-import kz.projectx.almatour.service.RegistrantionService;
+import kz.projectx.almatour.service.RegistrationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class RegistrationController {
 
-    private final RegistrantionService registrantionService;
+    private final RegistrationService registrantionService;
 
     @PostMapping
     public ResponseEntity<?> registerUser(@Valid @RequestBody UserDTO userDto) {

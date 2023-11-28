@@ -42,6 +42,10 @@ public class SecurityConfig {
                         .requestMatchers("/sign-up").permitAll()
                         .requestMatchers("/api/registration").permitAll() // localhost:8000/api/registration
                         .requestMatchers("/sign-out").permitAll()
+                        .requestMatchers("/place").permitAll()              // http://localhost:8000/place      test APIs
+                        .requestMatchers("/place/{id}").permitAll()         // http://localhost:8000/place/1
+                        .requestMatchers("/place/add").permitAll()          // http://localhost:8000/place/add
+                        .requestMatchers("/place/delete-{id}").permitAll()  // http://localhost:8000/place/delete-5
                         .anyRequest().authenticated()
         ).formLogin(
                 formLogin -> formLogin
